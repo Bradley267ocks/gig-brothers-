@@ -1,0 +1,8 @@
+{
+  "name": "Gig Brothers",
+  "description": "Gig Brothers: Complete Auto Care. Professional auto repair workshop in Lusikisiki offering engine overhauls, body repair, and 24/7 road assistance.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

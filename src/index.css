@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #2596BE;
+  --color-brand-red: #DF1D20;
+  --color-brand-dark-blue: #1a6a88;
+  --color-brand-dark-red: #c01a1c;
+  --color-brand-charcoal: #2D2F36;
+  --color-brand-bg: #F9FAFB;
+  --color-brand-text: #1F2937;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply overflow-x-hidden antialiased text-brand-text;
+  }
+}
+
+.service-card {
+  @apply bg-white p-6 rounded-xl shadow-sm border border-gray-100 transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+}
+
+.btn-primary {
+  @apply bg-brand-red text-white px-8 py-3 rounded-lg font-bold transition-all hover:bg-brand-dark-blue active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-brand-red text-brand-red px-8 py-3 rounded-lg font-bold transition-all hover:bg-brand-red hover:text-white active:scale-95;
+}
+
+.section-padding {
+  @apply py-20 px-6 max-w-7xl mx-auto;
+}
